@@ -1,0 +1,158 @@
+h1 {
+    text-align: center;
+    margin-top: 1.5%;
+    color: white;
+    user-select: none;
+}
+
+.container {
+    width: 90%;
+    height: 92.5%;
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: auto;
+}
+
+.image-container {
+    /* Existing styles */
+    width: 100%;
+    height: 85%;
+    border: 1px solid white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #f2f2f2;
+    margin: auto;
+    pointer-events: auto;
+    background-color: #302e2f;
+}
+
+#randomImage {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    /* Changed from 'cover' to 'contain' */
+    border-radius: 10px;
+}
+
+#randomVideo {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    /* Changed from 'cover' to 'contain' */
+    border-radius: 10px;
+}
+
+
+@media (max-width: 768px) {
+
+    #downloadLink,
+    #generateImageButton {
+        width: 150px !important;
+    }
+}
+
+@media (max-width: 480px) {
+
+    #downloadLink,
+    #generateImageButton {
+        width: 75px !important;
+    }
+}
+
+@media (max-height: 1050px) {
+
+    #downloadLink,
+    #generateImageButton {
+        height: 25px !important;
+        bottom: -5% !important;
+    }
+
+    .container {
+        height: 90%;
+    }
+}
+
+.image-container:hover {
+    cursor: pointer;
+    filter: brightness(90%);
+}
+
+#downloadLink {
+    position: fixed;
+    bottom: -5%;
+    left: 100%;
+    transform: translateX(-100%);
+    padding: 10px 20px;
+    border-radius: 5px;
+    background-color: #302e2f;
+    color: #fff;
+    overflow: visible;
+    height: 50px;
+    width: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    z-index: 9999;
+    cursor: pointer;
+
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    border: 1px solid #fff;
+    user-select: none;
+}
+
+#generateImageButton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #302e2f;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    position: fixed;
+    z-index: 9999;
+    text-align: center;
+    bottom: -5%;
+    height: 50px;
+    width: 300px;
+
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    border: 1px solid #fff;
+    user-select: none;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', Arial, sans-serif;
+
+    /* make the background color a pattern or something */
+    background-color: #302e2f;
+    background-image: url('https://www.transparenttextures.com/patterns/45-degree-fabric-light.png');
+}
+
+p {
+    margin-bottom: 10px;
+}
+
+/* Hover styles */
+#downloadLink:hover,
+#generateImageButton:hover,
+.image-container:hover {
+    filter: brightness(80%);
+    cursor: pointer;
+}
+
+#downloadLink:hover,
+#generateImageButton:hover {
+    filter: brightness(90%);
+    border: 1px solid #302e2f;
+}

@@ -1,2 +1,3 @@
-# React Image Grabber 9001
- Literally the same thing as my Image Grabber 9001, just wanted to learn some react.
+# React + Vite
+
+Implemented my Image Grabber 9001 project to utilze React and Vite, wanted to learn the tools a bit.
